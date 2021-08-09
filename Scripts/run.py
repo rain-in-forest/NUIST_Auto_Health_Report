@@ -9,9 +9,9 @@ import getOriJson
 
 try:
     with open('./Account.txt', 'r') as g:
-        lines = g.readlines().replace("\n","").replace("\r","")
-        username = lines[0]
-        password = lines[1]
+        lines = g.readlines()
+        username = lines[0].replace("\n", "").replace("\r", "").replace(" ", "")
+        password = lines[1].replace("\n", "").replace("\r", "").replace(" ", "")
         print(username)
         print(password)
 except FileNotFoundError as e:
