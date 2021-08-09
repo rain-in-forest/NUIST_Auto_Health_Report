@@ -9,7 +9,7 @@ import getOriJson
 
 try:
     with open('./Account.txt', 'r') as g:
-        lines = g.readlines()
+        lines = g.readlines().replace("\n","").replace("\r","")
         username = lines[0]
         password = lines[1]
         print(username)
