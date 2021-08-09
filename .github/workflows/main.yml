@@ -31,4 +31,4 @@ jobs:
       - name: Run python
         run: |
           pip3 install bs4 pyexecjs lxml
-          python3 run.py
+          python3 ./Scripts/run.py
